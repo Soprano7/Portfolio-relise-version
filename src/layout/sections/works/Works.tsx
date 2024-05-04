@@ -4,80 +4,28 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Work} from './work/Work';
 import socialImg from './../../../assets/images/proj-1.png'
 import timerImg from './../../../assets/images/proj-2.png'
+import workExperience from './../../../assets/images/1697474921115.jpg'
 import {Container} from '../../../components/Container';
 import {TabMenu, TabsStatusType} from './tabMenu/TabMenu';
 import {S} from './Works_Styles'
 import {AnimatePresence, motion } from "framer-motion"
 
 
-const tabsItems: Array<{status: TabsStatusType, title: string}> = [
-    {
-        title: "All",
-        status: "all"
-    },
-    {
-        title: "landing page",
-        status: "landing"
-    },
-    {
-        title: "React",
-        status: "react"
-    },
-    {
-        title: "spa",
-        status: "spa"
-    },
 
-]
+
+
+
 
 const worksData = [
     {
-        title: "Social Network",
-        src: socialImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        title: "Stamina AI",
+        src: workExperience,
+        text: "AI based psychologist which helps people overcome their anxiety and stress. This is my first job. At first, I started as an intern. After a successful internship, I was hired as a junior developer.",
         type: "spa",
-        id: 1
+        id: 1,
+        link: 'https://www.stamina.chat/',
     },
 
-    {
-        title: "Timer",
-        src: timerImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
-        id: 2
-    },
-
-    {
-        title: "Social Network",
-        src: socialImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa",
-        id: 3
-    },
-
-    {
-        title: "Timer",
-        src: timerImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
-        id: 4
-    },
-
-    {
-        title: "Social Network",
-        src: socialImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa",
-        id: 5
-    },
-
-    {
-        title: "Timer",
-        src: timerImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
-        id: 6
-    },
 
 
 ]
@@ -105,10 +53,7 @@ export const Works: React.FC = () => {
     return (
         <S.Works id={"works"}>
             <Container>
-                <SectionTitle>My Works</SectionTitle>
-                <TabMenu tabsItems={tabsItems}
-                         changeFilterStatus={changeFilterStatus}
-                         currentFilterStatus={currentFilterStatus}/>
+                <SectionTitle>My Experience </SectionTitle>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
 
                     <AnimatePresence>

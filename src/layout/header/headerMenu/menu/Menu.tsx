@@ -12,17 +12,10 @@ const items = [
         href: "skills"
     },
     {
-        title: "Works",
+        title: "Experience",
         href: "works"
     },
-    {
-        title: "Testimony",
-        href: "testimony"
-    },
-    {
-        title: "Contact",
-        href: "contact"
-    },
+
 ]
 
 export const Menu: React.FC = () => {

@@ -4,17 +4,14 @@ import {FlexWrapper} from '../../components/FlexWrapper';
 import {S} from './Footer_Styles'
 
 const socialItemsData = [
-    {
-        iconId: "instagram",
-    },
+
     {
         iconId: "telegram",
-    },
-    {
-        iconId: "vk",
+        link: "https://t.me/ErikSopra",
     },
     {
         iconId: "linkedin",
+        link: "https://www.linkedin.com/in/erik-akopian-8b43a52b4/",
     },
 
 ]
@@ -23,23 +20,19 @@ export const Footer: React.FC = () => {
     return (
         <S.Footer>
             <FlexWrapper direction={"column"} align={"center"}>
-                <S.Name>Svetlana</S.Name>
+                <S.Name>Эрик</S.Name>
                 <S.SocialList>
-
-                    {socialItemsData.map((s, index)=> {
-                        return(
+                    {socialItemsData.map((s, index) => {
+                        return (
                             <S.SocialItem key={index}>
-                                <S.SocialLink>
-                                    <Icon height={"21"} width={"21"} viewBox={"0 0 21 21"} iconId={s.iconId}/>
+                                <S.SocialLink href={s.link} target="_blank">
+                                    <Icon height={"21"} width={"21"} viewBox={"0 0 21 21"} iconId={s.iconId} />
                                 </S.SocialLink>
                             </S.SocialItem>
-                        )
+                        );
                     })}
-
                 </S.SocialList>
-                <S.Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</S.Copyright>
+                <S.Copyright>© 2024 Эрик Акопян.</S.Copyright>
             </FlexWrapper>
-
-        </S.Footer>
-    );
-};
+        </S.Footer>     );
+}

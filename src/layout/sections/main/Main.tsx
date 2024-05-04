@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../../assets/images/photo.jpg'
+import photo from '../../../assets/images/photo.webp'
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Container} from '../../../components/Container';
 import {S} from './Main_Styles'
@@ -14,7 +14,7 @@ export const Main: React.FC = () => {
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
                     <div>
                         <S.SmallText>Hi There</S.SmallText>
-                        <S.Name>I am <span>Svetlana Dyablo</span></S.Name>
+                        <S.Name>I am <span>Erik Akopyan</span></S.Name>
                         <S.MainTitle>
                             <p>A Web Developer.</p>
                             <Typewriter
